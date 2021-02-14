@@ -1,3 +1,4 @@
+import 'package:club_house_clone/shared/app_colors.dart';
 import 'package:club_house_clone/shared/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,9 +11,7 @@ class HomePage extends GetView<HomeController> {
     SizeConfig().init();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('HomePage'),
-      ),
+      backgroundColor: AppColors.primaryColor,
       body: Container(),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:club_house_clone/shared/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,12 +13,13 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Club house clone',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Raleway',
+        primaryColor: AppColors.primaryColor,
       ),
       defaultTransition: AppRoutes.routeTrasitionType,
       initialRoute: AppRoutes.initalRoute,
-      initialBinding: AppBinding(),
       getPages: AppRoutes.routes,
+      initialBinding: AppBinding(),
     );
   }
 }
